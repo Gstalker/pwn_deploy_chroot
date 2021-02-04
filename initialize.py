@@ -105,7 +105,7 @@ def generateDockerfile(filelist, flags):
         if REPLACE_BINSH:
             copybin += "COPY ./catflag" + " /home/" + filename + "/bin/sh\n"
         else:
-            copybin += "COPY ./catflag" + " /home/" + filename + "/bin/sh\n"
+            copybin += ""
 
     # print copybin
 
