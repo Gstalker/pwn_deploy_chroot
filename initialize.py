@@ -133,11 +133,11 @@ def generateDockerfile(filelist, flags):
         copy_lib_bin_dev += dev % (filelist[x], filelist[x], filelist[x], filelist[x], filelist[x], filelist[x])
         if x == len(filelist) - 1:
             if not REPLACE_BINSH:
-                copy_lib_bin_dev += ness_bin % (filelist[x], filelist[x], filelist[x])
+                copy_lib_bin_dev += ness_bin % (filelist[x], filelist[x], filelist[x], filelist[x])
             pass                
         else: 
             if not REPLACE_BINSH:   
-                copy_lib_bin_dev += ness_bin % (filelist[x], filelist[x], filelist[x]) + " && "
+                copy_lib_bin_dev += ness_bin % (filelist[x], filelist[x], filelist[x], filelist[x]) + " && "
             else:
                 copy_lib_bin_dev += " && "
 
